@@ -121,3 +121,7 @@ end
 
 -- Create command
 vim.api.nvim_create_user_command("LuaOutput", LuaOutputWindow, {})
+
+-- Default keymap
+-- Run lua for current file
+vim.keymap.set("n", "<A-l>", "<cmd>LuaOutput<CR>", { desc = "Run lua for current file" })
