@@ -1,4 +1,6 @@
-# LuaOutput
+![LuaOutput](luaoutput.png)
+Horrbile AI generated image of LuaOutput. I'm not an artist, so I'm sorry! Hopefully it gets better with time.
+
 LuaOutput is a simple Nvim plugin that allows you to run Lua code and see the output in a bottom split.
 
 1. **Fetches the current buffer’s Lua code** (the file you are currently editing).
