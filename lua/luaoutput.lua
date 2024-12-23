@@ -122,7 +122,7 @@ function M.lua_output_window()
 end
 
 -- Set up the plugin (called automatically by lazy.nvim)
-function M.init()
+function M.setup()
 	-- Create command
 	vim.api.nvim_create_user_command("LuaOutput", function()
 		M.lua_output_window()
