@@ -124,7 +124,9 @@ end
 -- Set up the plugin (called automatically by lazy.nvim)
 function M.init()
 	-- Create command
-	vim.api.nvim_create_user_command("LuaOutput", M.lua_output_window, {})
+	vim.api.nvim_create_user_command("LuaOutput", function()
+		M.lua_output_window()
+	end, {})
 
 	-- Default keymap
 	vim.keymap.set("n", "<A-l>", "<cmd>LuaOutput<CR>", {
