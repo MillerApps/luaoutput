@@ -1,5 +1,8 @@
 ![LuaOutput](luaoutput.png)
-Horrbile AI generated image of LuaOutput. I'm not an artist, so I'm sorry! Hopefully it gets better with time.
+
+> [!Note]
+> Horrbile AI generated image of LuaOutput. I'm not an artist, so I'm sorry! Hopefully it gets better with time.
+>
 
 LuaOutput is a simple Nvim plugin that allows you to run Lua code and see the output in a bottom split.
 
