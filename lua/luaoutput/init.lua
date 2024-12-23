@@ -21,6 +21,8 @@
 -- TODO: Add auto-close after 30 seconds
 -- TODO: Add LSP docs
 
+local M = {}
+
 -- Helper function to find and close any existing output window
 local function cleanup_existing_output()
 	-- Find windows with lua-output filetype
@@ -119,9 +121,13 @@ function LuaOutputWindow()
 	vim.api.nvim_buf_set_lines(buf, 0, -1, false, final_output)
 end
 
--- Create command
-vim.api.nvim_create_user_command("LuaOutput", LuaOutputWindow, {})
+function M.setup()
+	-- Create command
+	vim.api.nvim_create_user_command("LuaOutput", LuaOutputWindow, {})
 
--- Default keymap
--- Run lua for current file
-vim.keymap.set("n", "<A-l>", "<cmd>LuaOutput<CR>", { desc = "Run lua for current file" })
+	-- Default keymap
+	-- Run lua for current file
+	vim.keymap.set("n", "<A-l>", "<cmd>LuaOutput<CR>", { desc = "Run lua for current file" })
+end
+
+return M
