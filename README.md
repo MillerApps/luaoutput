@@ -31,12 +31,16 @@ return {
 }
 ```
 Next, run `:Lazy Sync` to install the plugin.
+This will intall the plugin and update the `lazy.lock` file as well as update any other plugins you have installed.
 
 ## Usage
 Then, the keybinds are as follows:
-`<A-l>` - Run the Lua code in the current buffer.
-`q` - Close the LuaOutput window. (You must be in the LuaOutput window to close it; by default, you will jump right back to the window you were in before opening LuaOutput.)
-`<C-j>` - Move the cursor down in the LuaOutput window or whichever direction you need to go.
+> [!TIP]
+> your kybinds may be differnt for splits, so double check your config.
+
+1. `<A-l>` - Run the Lua code in the current buffer.
+2. `q` - Close the LuaOutput window. (You must be in the LuaOutput window to close it; by default, you will jump right back to the window you were in before opening LuaOutput.)
+3. `<C-j>` - Move the cursor down in the LuaOutput window or whichever direction you need to go.
 
 ## Summary
 • **Purpose**: Quickly run the current Lua file in Neovim and display results in a bottom split window.
